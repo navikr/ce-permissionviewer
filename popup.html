@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Release Automation Permission Viewer</title>
+</head>
+
+<body class="body-class">
+  <div id="mySidenav" class="sidenav">
+    <a style="color: #62efa8;text-align:center;" id='sideNavHeading'>Applications</a>
+    <a href="javascript:void(0)" id="sideNavClose" class="closebtn">&times;</a>
+    <div id="appfilter-div">
+      <input type="search" id="appFilter" placeholder="Search for Applications"></div>
+
+  </div>
+  <!--<div id="loader"></div>-->
+  <div class="container-fluid" id="main">
+    <span style="font-size:30px;cursor:pointer" id="openNav">&#9776;</span>
+    <!--<button type="button" style="float:right;" class="btn btn-labeled btn-warning" id="export">
+                <span class="btn-label" class="glyphicon glyphicon-export"></span>Export</button>-->
+    <div class="col-sm-12 col-md-12">
+      <h1 class="page-header">RA Permission Viewer</h1>
+      <div class="row">
+        <div class="col-sm-9 col-md-9">
+          <h3 id="appheader" class="sub-header"></h3>
+        </div>
+        <div class="col-sm-3 col-md-3"><input type="search" id="userFilter" placeholder="Filter users"></div>
+      </div>
+
+      <div class="row">
+        <div class="pull-rightcustom">
+          <div class="btn-group">
+            <button type="button" class="btn-xm btn-filter" id="superuser" style="background-color:#b92c28;border-color: #b92c28;color:white;font-style: italic;">Superuser</button>
+            <button type="button" class="btn-xm btn-filter" id="secureAdmin" style="background-color:#e38d13;border-color: #e38d13;color:white;font-style: italic;">Security Admin</button>
+            <button type="button" class="btn-xm btn-filter" id="serverAdmin" style="background-color:#d88611;border-color: #d88611;color:white;font-style: italic;">Server Admin</button>
+            <button type="button" class="btn-xm btn-filter" id="generalAdmin" style="background-color:#ef9008;border-color: #ef9008;color:white;font-style: italic;">General Admin</button>
+            <button type="button" class="btn-xm btn-filter" id="artManager" style="background-color:#3e8f3e;border-color: #3e8f3e;color:white;font-style: italic;">Artifact Manager</button>
+            <button type="button" class="btn-xm btn-filter" id="appCreator" style="background-color:#62a262;border-color: #62a262;color:white;font-style: italic;">App Creator</button>
+            <button type="button" class="btn-xm btn-default btn-filter" id="all" style="color:black;font-style: italic;">All</button>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table id="permissionTable" class="table table-striped">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="myModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Environment Permissions</h4>
+        </div>
+        <div class="modal-body" id="myModalBody">
+          <table id="modalTable" class="table table-striped">
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="dismissModal" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="popup.css">
+<link href="bootstrap-theme.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="utility.js"></script>
+<script src="presentation.js"></script>
+<script src="popup.js"></script>
+
+</html>

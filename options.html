@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RA Permission Viewer Configuration</title>
+  </head>
+
+<body>
+<table width="100%">
+	<tr>
+	<td col-width='40%'>RA Server URL:</td>
+	<td col-width='60%'><input type="text" id="raurl" placeholder="http://NACSERVER:8080"></td>
+	</tr>
+	<tr>
+	<td col-width='40%'>User Name:</td>
+	<td col-width='60%'><input type="text" id="rauser" placeholder="RA user name"></td>
+	</tr>
+	<tr>
+	<td col-width='40%'>Password:</td>
+	<td col-width='60%'><input type="password" id="rapwd"  placeholder="RA user password"></td>
+	</tr>
+	<tr>
+	<td col-width='40%'>Display unassociated users:</td>
+	<td col-width='60%'><input type="checkbox" id="userlistfilterchkbox"></td>
+	</tr>
+	<tr>
+	<td> <div id="status"></div></td>
+	</tr>
+	</table>
+  <hr>
+	<button id="save">Save</button>
+	<button id="reset">Reset</button>
+  <script src="options.js"></script>
+	<script src="utility.js"></script>
+</body>
+</html>
+
+
